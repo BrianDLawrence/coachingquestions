@@ -1,0 +1,400 @@
+{
+    "questions": [
+        {
+            "question": "What would you do differently if you could do it over again?",
+            "tags": "probing, options"
+        },
+        {
+            "question": "If you had a choice, what would you do?",
+            "tags": "probing, options"
+        },
+        {
+            "question": "Where do we go from here?",
+            "tags": "will"
+        },
+        {
+            "question": "What are you afraid of?",
+            "tags": "fear, reality"
+        },
+        {
+            "question": "Who can get you that answer?",
+            "tags": "probing, reality, will"
+        },
+        {
+            "question": "How would you summarize the effort so far?",
+            "tags": "probing, reality"
+        },
+        {
+            "question": "What seems to be the main obstacle?",
+            "tags": "probing, goal"
+        },
+        {
+            "question": "What will you take away from this situation?",
+            "tags": "probing, reality"
+        },
+        {
+            "question": "How do you know you will do it, until you do it?",
+            "tags": "probing, will"
+        },
+        {
+            "question": "How can you give your power and energy to the solution?",
+            "tags": "probing, options"
+        },
+        {
+            "question": "What resources do you need to help you decide?",
+            "tags": "probing, options"
+        },
+        {
+            "question": "What bold action could you take?",
+            "tags": "probing, will"
+        },
+        {
+            "question": "What do you need to make a decision?",
+            "tags": "probing, options"
+        },
+        {
+            "question": "How do you suppose you can find out more about it?",
+            "tags": "probing, options"
+        },
+        {
+            "question": "What kind of plan do you need to create?",
+            "tags": "probing, goal"
+        },
+        {
+            "question": "If you were faced with the same situation again, what would you do?",
+            "tags": "probing, options"
+        },
+        {
+            "question": "If you could start over, what would you do?",
+            "tags": "probing, options"
+        },
+        {
+            "question": "What might happen?",
+            "tags": "probing, reality"
+        },
+        {
+            "question": "What options haven't you considered?",
+            "tags": "probing, options"
+        },
+        {
+            "question": "What do you need?",
+            "tags": "probing, goal"
+        },
+        {
+            "question": "What options can you create?",
+            "tags": "probing, options"
+        },
+        {
+            "question": "What seems to confuse you?",
+            "tags": "probing, reality"
+        },
+        {
+            "question": "If you had a blank page, what would you write?",
+            "tags": "probing, options"
+        },
+        {
+            "question": "How else can we handle this?",
+            "tags": "probing, options"
+        },
+        {
+            "question": "What is your backup plan?",
+            "tags": "probing, options"
+        },
+        {
+            "question": "How will you know you have reached it?",
+            "tags": "probing, goal"
+        },
+        {
+            "question": "What if it doesn't work out the way that you hope?",
+            "tags": "probing, reality"
+        },
+        {
+            "question": "What do you think is missing?",
+            "tags": "probing, options"
+        },
+        {
+            "question": "What is currently motivating you?",
+            "tags": "probing, reality"
+        },
+        {
+            "question": "What haven't you considered yet?",
+            "tags": "probing, options"
+        },
+        {
+            "question": "What is your role in that?",
+            "tags": "probing, reality"
+        },
+        {
+            "question": "What haven't you done yet?",
+            "tags": "probing, options"
+        },
+        {
+            "question": "What's it going to take...?",
+            "tags": "probing, options"
+        },
+        {
+            "question": "What is the lesson you could take out of this?",
+            "tags": "probing, reality"
+        },
+        {
+            "question": "What is the worst possible outcome that could occur if you make this decision?",
+            "tags": "probing, options"
+        },
+        {
+            "question": "What are the risks if you do and if you do not?",
+            "tags": "probing, options"
+        },
+        {
+            "question": "What one thing could you do in this situation that scares you?",
+            "tags": "fear, options"
+        },
+        {
+            "question": "How can you have it be fun?",
+            "tags": "probing, options"
+        },
+        {
+            "question": "What support do you need to accomplish this?",
+            "tags": "probing, w"
+        },
+        {
+            "question": "What resources are available to you?",
+            "tags": "probing, reality"
+        },
+        {
+            "question": "What if it doesn't work?",
+            "tags": "probing, options"
+        },
+        {
+            "question": "What are your other options? ",
+            "tags": "probing, options"
+        },
+        {
+            "question": "What are the 3 steps to achieve that?",
+            "tags": "probing, options"
+        },
+        {
+            "question": "What are you tolerating?",
+            "tags": "probing, reality"
+        },
+        {
+            "question": "How can I be most helpful to you right now?",
+            "tags": "probing, goal"
+        },
+        {
+            "question": "What is your strategy for that?",
+            "tags": "probing, options"
+        },
+        {
+            "question": "What do you most need right now?",
+            "tags": "probing, reality"
+        },
+        {
+            "question": "What will you commit to?",
+            "tags": "probing, will"
+        },
+        {
+            "question": "What is the bigger game for you?",
+            "tags": "probing, goal"
+        },
+        {
+            "question": "What is the impact you want?",
+            "tags": "probing, goal"
+        },
+        {
+            "question": "What is not yet clear?",
+            "tags": "probing, reality"
+        },
+        {
+            "question": "What will get in the way?",
+            "tags": "probing, reality"
+        },
+        {
+            "question": "What haven't you tried so far?",
+            "tags": "probing, options"
+        },
+        {
+            "question": "Who could you talk to that could help with the issue?",
+            "tags": "probing, options"
+        },
+        {
+            "question": "What could be your next step?",
+            "tags": "probing, will"
+        },
+        {
+            "question": "What is the truth here?",
+            "tags": "probing, reality"
+        },
+        {
+            "question": "What is your desired outcome?",
+            "tags": "probing, goal"
+        },
+        {
+            "question": "What do you really want?",
+            "tags": "probing, goal"
+        },
+        {
+            "question": "How has that worked in the past?",
+            "tags": "probing, reality"
+        },
+        {
+            "question": "What is just one more possibility?",
+            "tags": "probing, options"
+        },
+        {
+            "question": "If you couldn't fail, what would you do?",
+            "tags": "probing, options"
+        },
+        {
+            "question": "Is there another way to look at it?",
+            "tags": "probing, reality, options"
+        },
+        {
+            "question": "How will you measure your success?",
+            "tags": "probing, action, goal"
+        },
+        {
+            "question": "What if you do nothing?",
+            "tags": "probing, options"
+        },
+        {
+            "question": "What are you willing to do differently?",
+            "tags": "probing, options"
+        },
+        {
+            "question": "Where might you get stopped?",
+            "tags": "probing, reality"
+        },
+        {
+            "question": "What are you avoiding?",
+            "tags": "probing, reality"
+        },
+        {
+            "question": "What have you tried so far?",
+            "tags": "probing, reality"
+        },
+        {
+            "question": "How's that working for you? ~Dr Phil",
+            "tags": "probing, reality"
+        },
+        {
+            "question": "How committed are you to take action?",
+            "tags": "probing, will"
+        },
+        {
+            "question": "What would you like to focus on?",
+            "tags": "probing, goal"
+        },
+        {
+            "question": "What is the goal you want help with?",
+            "tags": "probing, goal"
+        },
+        {
+            "question": "What are the benefits of hitting this goal?",
+            "tags": "probing, goal"
+        },
+        {
+            "question": "What is your goal for this session?",
+            "tags": "probing, goal"
+        },
+        {
+            "question": "Can you provide an example?",
+            "tags": "probing, reality"
+        },
+        {
+            "question": "What are the perspectives of any other people involved?",
+            "tags": "probing, reality"
+        },
+        {
+            "question": "What is your aim for our time together?",
+            "tags": "probing, goal"
+        },
+        {
+            "question": "What is the outcome you would like to have from this session?",
+            "tags": "probing, goal"
+        },
+        {
+            "question": "We have x amount of time for this session, what would make you feel like we made progress by the end?",
+            "tags": "probing, goal"
+        },
+        {
+            "question": "If you could use magic to fix this, what would that ideal solution look like?",
+            "tags": "probing, goal"
+        },
+        {
+            "question": "What would a fantastic outcome look like?",
+            "tags": "probing, goal"
+        },
+        {
+            "question": "On a scale of 1-10, if the best case is 10, where are you now?",
+            "tags": "probing, reality"
+        },
+        {
+            "question": "On a scale of 1-10, if the best case is 10, where are you now? What number do you want to be?",
+            "tags": "probing, reality"
+        },
+        {
+            "question": "What are you feeling about this situation?",
+            "tags": "probing, reality"
+        },
+        {
+            "question": "What do you have available to you now to help?",
+            "tags": "probing, reality"
+        },
+        {
+            "question": "What risks exist now for this?",
+            "tags": "probing, reality"
+        },
+        {
+            "question": "What areas are you confident about related to this?",
+            "tags": "probing, reality"
+        },
+        {
+            "question": "What are you not confident about?",
+            "tags": "probing, reality"
+        },
+        {
+            "question": "What ideas have you thought of so far?",
+            "tags": "probing, options"
+        },
+        {
+            "question": "What are the different approaches you could take?",
+            "tags": "probing, options"
+        },
+        {
+            "question": "What could a permanent fix be?",
+            "tags": "probing, options"
+        },
+        {
+            "question": "What have you or others done that worked in the past?",
+            "tags": "probing, options"
+        },
+        {
+            "question": "What could be done to reduce the risk?",
+            "tags": "probing, options"
+        },
+        {
+            "question": "What will you do?",
+            "tags": "probing, will"
+        },
+        {
+            "question": "What option are you choosing?",
+            "tags": "probing, will"
+        },
+        {
+            "question": "What steps are you going to take?",
+            "tags": "probing, will"
+        },
+        {
+            "question": "What do you need to support you in completing this?",
+            "tags": "probing, will"
+        },
+        {
+            "question": "When will you take that first step?",
+            "tags": "probing, will"
+        },
+        {
+            "question": "What could happen to prevent action?",
+            "tags": "probing, will"
+        }
+    ]
+}

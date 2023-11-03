@@ -21,7 +21,7 @@ export default defineNuxtConfig({
   },
   devtools: { enabled: true },
   modules: [
-    '@nuxtjs/tailwindcss',
+    '@nuxtjs/tailwindcss', 'nuxt-vitest'
   ],
   runtimeConfig: {// availabe only server side
     openAIKey: process.env.OPENAIKEY,
