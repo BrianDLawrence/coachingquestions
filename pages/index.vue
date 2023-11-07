@@ -5,6 +5,7 @@
         <h1>Powerful questions</h1>
       </div>
     </div>
+    <ARandomQuestion></ARandomQuestion>
   </div>
 </template>
 
