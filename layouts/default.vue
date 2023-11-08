@@ -3,7 +3,7 @@
     <div class="navbar bg-primary text-primary-content">
       <div class="flex-1 xl:px-20 2xl:px-30">
         <NuxtLink to="/">
-          LOGO HERE
+          <Logo></Logo>
         </NuxtLink>
       </div>
       <div class="flex-none hidden lg:flex">

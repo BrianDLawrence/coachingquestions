@@ -6,6 +6,7 @@
       </div>
     </div>
     <ARandomQuestion></ARandomQuestion>
+    <GenerateQuestions></GenerateQuestions>
   </div>
 </template>
 
