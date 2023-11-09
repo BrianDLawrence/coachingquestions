@@ -16,7 +16,7 @@ export default defineEventHandler(async (event) => {
 
     const query = getQuery(event);
 
-    const question = "As a professional masterful coach, utilizing the TOMS coaching approach, please create " + query.numberofquestions + " questions that can be used to understand the " + query.questiontype + " of the coaching session. Please provide the questions in the following format: <QUESTIONS START><Q>'the question'</Q><Q>'the second question'</Q>..<QUESTIONS END>"
+    const question = "As a professional masterful coach, utilizing the " + query.coachingModel + " coaching approach, please create " + query.numberofquestions + " questions for use in the session during the " + query.questiontype + " stage of the coaching model. Please provide the questions in the following format: <QUESTIONS START><Q>'the question'</Q><Q>'the second question'</Q>..<QUESTIONS END>"
 
     console.log("To Chat GPT:" + question)
 
@@ -32,7 +32,7 @@ export default defineEventHandler(async (event) => {
             model: "gpt-3.5-turbo",
         });
 
-        console.log(chatCompletion.choices[0].toString)
+        console.log(chatCompletion.choices[0])
         return parseQuestions(String(chatCompletion.choices[0].message?.content))
 
     } catch (error: any) {
