@@ -23,6 +23,7 @@
     "vue-router": "^4.2.5"
   },
   "dependencies": {
+    "mongodb": "^6.3.0",
     "openai": "^4.16.1"
   }
 }

@@ -26,6 +26,7 @@ export default defineNuxtConfig({
   runtimeConfig: {// availabe only server side
     openAIKey: process.env.OPENAIKEY,
     mongoURI: process.env.MONGOURI,
+    mongoDB: process.env.MONGODB,
     BASE_URL: process.env.BASE_URL || 'http://localhost:3000',
     // Public keys that are exposed to the client
     public: {
