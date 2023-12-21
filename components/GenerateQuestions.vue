@@ -46,11 +46,26 @@
                 </div>
 
                 <div v-if="questionsLoaded" class="flex justify-center py-5">
-                    <ul class="list-decimal text-left inline-block text-lg">
-                        <li v-for="question in generatedQuestions">
-                            {{ question }}
-                        </li>
-                    </ul>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Question</th>
+                                <th>Save To DB</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr v-for="(question, index) in generatedQuestions">
+                                <th>{{ question }}</th>
+                                <td><input type="checkbox" class="checkbox checkbox-primary"
+                                        v-model="saveQuestionIndex[index]" />
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="card-actions justify-center" v-if="canSaveQuestion">
+                    <button class="btn btn-accent" @click="saveQuestions()" :tabindex="11" :disabled="!readyToGenerate">Save
+                        Questions</button>
                 </div>
                 <div v-if="isGenerating" class="grid">
                     <span class="loading loading-bars loading-lg justify-self-center"></span>
@@ -75,6 +90,7 @@
 <script setup lang="ts">
 
 const generatedQuestions = ref<String[]>([])
+const saveQuestionIndex = ref<Boolean[]>([])
 const questionsLoaded = ref(false)
 const isError = ref(false);
 const isGenerating = ref(false);
@@ -95,6 +111,8 @@ const apiQuery = computed(() => ({
     questiontype: coachtype.value === 'GROW' ? growstage.value : tomsstage.value,
 }));
 
+const canSaveQuestion = computed(() => saveQuestionIndex.value.some(element => element === true));
+
 const generateQuestions = async () => {
 
     isError.value = false;
@@ -113,10 +131,22 @@ const generateQuestions = async () => {
     if (data && !isError.value) {
         console.log(data.value);
         generatedQuestions.value = data.value!
-        questionsLoaded.value = true
+        saveQuestionIndex.value = new Array(generatedQuestions.value.length).fill(false);
+        questionsLoaded.value = true;
     }
 
     isGenerating.value = false
+}
+
+const saveQuestions = async () => {
+
+    const savedQuestions: String[] = [];
+    for (let i = 0; i < generatedQuestions.value.length; i++) {
+        if (saveQuestionIndex.value[i]) {
+            savedQuestions.push(generatedQuestions.value[i]);
+        }
+    }
+    console.log(savedQuestions);
 }
 
 const confirmError = () => {
