@@ -6,13 +6,23 @@ const config = useRuntimeConfig()
 
 export default defineEventHandler(async (event) => {
 
-    const body = await readBody(event)
+    const body = await readBody(event);
+    console.log(body)
 
     try {
         // Connect the client to the server	(optional starting in v4.7)
         await client.connect();
+        const database = client.db(config.mongoDB);
+        const questionsCollection = database.collection("Questions");
 
-        //DO STUFF
+        const documents = body.questions.map((question: string) => ({
+            question,
+            coachingModel: body.coachingModel,
+            questionType: body.questionType
+        }));
+
+        const result = await questionsCollection.insertMany(documents);
+        console.log(`Questions were inserted to the database: ${result}`)
 
     } catch (error: any) {
         throw createError({

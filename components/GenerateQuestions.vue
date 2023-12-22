@@ -63,11 +63,21 @@
                         </tbody>
                     </table>
                 </div>
-                <div class="card-actions justify-center" v-if="canSaveQuestion">
+                <div class="card-actions justify-center" v-if="canSaveQuestion && !questionsSaved && !isSavingQuestions">
                     <button class="btn btn-accent" @click="saveQuestions()" :tabindex="11" :disabled="!readyToGenerate">Save
                         Questions</button>
                 </div>
-                <div v-if="isGenerating" class="grid">
+                <div class="card-actions justify-center" v-if="questionsSaved">
+                    <div role="alert" class="alert alert-success">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="stroke-current shrink-0 h-6 w-6" fill="none"
+                            viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                        <span>Questions saved!</span>
+                    </div>
+                </div>
+                <div v-if="isGenerating || isSavingQuestions" class="grid">
                     <span class="loading loading-bars loading-lg justify-self-center"></span>
                 </div>
                 <div class="mx-auto justify-items-center md:col-span-2 py-2 hover:cursor-pointer" v-if="isError">
@@ -94,6 +104,8 @@ const saveQuestionIndex = ref<Boolean[]>([])
 const questionsLoaded = ref(false)
 const isError = ref(false);
 const isGenerating = ref(false);
+const isSavingQuestions = ref(false);
+const questionsSaved = ref(false);
 const coachtype = ref("GROW")
 const growstage = ref("Select the model stage:")
 const tomsstage = ref("Select the model stage:")
@@ -117,6 +129,7 @@ const generateQuestions = async () => {
 
     isError.value = false;
     isGenerating.value = true;
+    questionsSaved.value = false;
 
     const { data, error } = await useFetch<String[]>("/api/generatequestions", {
         query: apiQuery
@@ -129,7 +142,6 @@ const generateQuestions = async () => {
     }
 
     if (data && !isError.value) {
-        console.log(data.value);
         generatedQuestions.value = data.value!
         saveQuestionIndex.value = new Array(generatedQuestions.value.length).fill(false);
         questionsLoaded.value = true;
@@ -146,7 +158,29 @@ const saveQuestions = async () => {
             savedQuestions.push(generatedQuestions.value[i]);
         }
     }
-    console.log(savedQuestions);
+
+    isError.value = false;
+    isSavingQuestions.value = true;
+
+    const { data, error } = await useFetch<String[]>("/api/savequestions", {
+        method: 'POST',
+        body: {
+            questions: savedQuestions,
+            coachingModel: coachtype.value,
+            questionType: coachtype.value === 'GROW' ? growstage.value : tomsstage.value,
+        }
+    }
+    );
+
+    if (error.value) {
+        isError.value = true;
+        console.log("ERROR" + error.value);
+    }
+
+    if (data && !isError.value) {
+        questionsSaved.value = true;
+    }
+    isSavingQuestions.value = false;
 }
 
 const confirmError = () => {
