@@ -162,7 +162,7 @@ const saveQuestions = async () => {
     isError.value = false;
     isSavingQuestions.value = true;
 
-    const { data, error } = await useFetch<String[]>("/api/savequestions", {
+    const { data, error } = await useFetch<String[]>("/api/savegeneratedquestions", {
         method: 'POST',
         body: {
             questions: savedQuestions,
