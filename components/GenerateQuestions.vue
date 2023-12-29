@@ -27,7 +27,7 @@
                         <div v-show='coachtype === "GROW"'>
                             <select class="select w-full max-w-xs" v-model="growstage">
                                 <option disabled selected>Select the model stage:</option>
-                                <option>Grow</option>
+                                <option>Goal</option>
                                 <option>Reality</option>
                                 <option>Options</option>
                                 <option>Will</option>
